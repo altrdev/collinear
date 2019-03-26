@@ -46,7 +46,7 @@ public class CollinearController {
     }
 
     /**
-     * Api that returns collinear segments
+     * Api that returns collinear lines
      *
      * @return response json
      */
