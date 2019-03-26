@@ -43,7 +43,7 @@ The application exposes these REST API:
   - `DELETE /api/space` - Remove all points
   - `GET /api/lines/{n}` - Get all line passing through at least N collinear points.
   
-I created a [Postman Collection](https://www.getpostman.com/collections/e094226a9f78f32eace3).
+I created a [Postman Collection](https://www.getpostman.com/collections/e094226a9f78f32eace3) for the purpose.
 
 
 
