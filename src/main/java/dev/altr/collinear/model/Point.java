@@ -1,35 +1,24 @@
 package dev.altr.collinear.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 /**
  * Created by alessandrotravi on 25/03/2019.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class Point {
+public class Point implements Serializable {
+    private static final long serialVersionUID = -2857947990787058926L;
 
-    @Id
-    @GeneratedValue
-    @JsonIgnore
-    Long id;
     @NotNull
-    Double x;
+    private double x;
     @NotNull
-    Double y;
+    private double y;
 
 }
